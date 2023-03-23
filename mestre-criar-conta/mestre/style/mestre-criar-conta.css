@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Lifecraft';
+    src: url(../../fonts/LifeCraft_Font.ttf) format('truetype');
+}
+
+.row-header{
+    height: 60px;
+    border-bottom: 3px black solid;
+}
+
+.row-main{
+    height: calc(100vh - 120px);
+    background-image: url("../../images/background/mestre-criar-conta-ajustado.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.form-floating label{
+    color: rgb(255,193,7);
+}
+
+.form-floating input{
+    background-color: rgba(0, 0, 0, 0.541);
+    border: 2px solid rgba(255, 193, 7, 0.548);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-floating input:focus{
+    border: 2px solid rgb(255,193,7);
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+}
+
+.row-footer{
+    border-top: 3px black solid;
+    height: 60px;
+    background-image: url("../../images/footer/background-texture-footer.jpg");
+    background-size: cover;
+}
+
+:is(.row-header,.row-main){
+    font-family: 'Lifecraft', sans-serif;
+}
+
+:is(.row-header,.row-main,.row-footer){
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.box-opcoes{
+    height: 70%;
+}
+
+@media (max-width: 980px){
+    :is(.row-header,.row-main,.row-footer){
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    :is(.box-opcoes){
+        width: 60% !important;  
+    }
+}
+@media (max-width: 650px){
+    
+    :is(.box-opcoes){
+        width: 80% !important;
+    }
+}
