@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Lifecraft';
+    src: url(../../fonts/LifeCraft_Font.ttf) format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.row-header{
+    height: 60px;
+    border-bottom: 3px black solid;
+}
+
+.row-main{
+    height: calc(100vh - 120px);
+    background-image: url("../../images/background/wallpaper-mestre-lobby.png");
+    background-size: cover;
+}
+
+.row-main > div > .btn{
+    font-weight: bold;
+}
+
+.row-main > div > .btn:hover{
+    border: 1px yellow solid;
+}
+
+.header-secoes{
+    font-weight: normal;
+    color: rgb(255,193,7);
+}
+
+.secoes{
+    background-color: #C7C7C7;
+    padding: 20px 0px;
+    border-bottom: 3px black solid;
+}
+
+.secoes > p{
+    padding-bottom: 4px;
+    margin: 0;
+    text-indent: 7em;
+}
+
+.row-footer{
+    border-top: 3px black solid;
+    height: 60px;
+    background-image: url("../../images/footer/background-texture-footer.jpg");
+    background-size: cover;
+}
+
+:is(.row-header,.row-footer){
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+@media (max-width: 980px){
+    :is(.row-header,.row-main,.row-footer){
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    :is(.box-opcoes){
+        width: 60% !important;  
+    }
+}
+@media (max-width: 650px){
+    
+    :is(.box-opcoes){
+        width: 80% !important;
+    }
+}
